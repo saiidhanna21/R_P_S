@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="R_P_S.css">
+</head>
+<body>
+    <h2>Let's play </h2>
+    <h2 id="second">Beat me if you can </h2>
+   
+    <p class="form">
+        <span id="name_style">Enter your name: </span><input type="text" id="name"/>
+        <input type="submit" id="submit">
+        <input type="reset">
+    </p>
+    
+    <p class="form">
+        <span id="name_style">Choose the number of rounds: </span>
+        <input type="number" min="1" max="50" id="round">
+        <input type="submit" id="submit_1"><br>
+        <span id="display_rounds"></span>
+    </p>
+
+    <div>
+        <Table id="scoreBoard">
+            <thead>
+                <th>Names</th>
+                <th>Score</th>
+            </thead>
+            <tbody>
+                <tr class="active-row">
+                    <td id="name_table">User</td>
+                    <td>0</td>
+                </tr>  
+                <tr>
+                    <td>Computer</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </Table>
+    </div>
+    <p id="output">Choose your weapon from the layout below...</p>
+    <div class="buttons">
+        <button id="Rock"><img src="images/rock.png" alt="rock" ><span class="caption">Rock</span></button>
+        <button id="Paper"><img src="images/paper.png" alt="paper"><span class="caption">Paper</span></button>
+        <button id="Scissor"><img src="images/scissor.png" alt="scissor"><span class="caption">Scissor</span></button>
+    </div>
+    <p id="replay"><button id="playAgain"><span id="p">Play again</span></button></p>
+</body>
+<script src="R_P_S.js"></script>
+</html>

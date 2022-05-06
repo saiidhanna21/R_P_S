@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@keyframes glowing {
+    70% {
+      background-color: #3d3dff;
+      box-shadow: 0 0 5px #0539a8;
+    }
+  }
+
+body{
+    background-image: url(images/background_image.jpg);
+    background-attachment: fixed;
+    background-size:100%;
+}
+
+#name_style{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.form{
+   width: 500px;
+}
+
+#display_rounds{
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+strong{
+    color: aqua;
+}
+
+h2{ 
+    font-family:'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0%;
+}
+
+#second{
+    padding-top: 1%;
+}
+
+table{
+    position: absolute;
+    left: 38%;
+    top: 15%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif; 
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);    
+}
+thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+th,td {
+    padding: 12px 15px;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+tbody tr:last-of-type {
+    border-bottom: 2px solid #09856c;
+}
+tbody tr.active-row {
+    font-weight: bold;
+    color: #07d1a9;
+}
+
+button{
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.buttons{
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+
+#output{
+    position: relative;
+    top:100px;
+    left: 20%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    width: 60%;
+}
+
+#draw,#lose,#win{
+    color: cyan;
+    font-size: 40px;
+}
+
+i{
+    color: cyan;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.caption{
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    left: 18%;
+}
+
+#Rock,#Paper,#Scissor {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+}
+
+#playAgain{
+    background-color: #1313b1;
+    border-radius: 20px;
+}
+
+#replay{  
+    position: relative;
+    text-align: center;
+    top: 100px;
+}
+
+#p{
+    font-size: 25px;
+}
+
+.glow{
+    animation: glowing 1300ms infinite;
+}
+
+
