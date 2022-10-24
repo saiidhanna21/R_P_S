@@ -23,7 +23,7 @@ var names,priority=false;
 var choices = ['rock','paper','scissor'];
 var user_score = 0;
 var computer_score = 0;
-var round_number,round_by_round = 0;
+var round_number = 1,round_by_round = 0;
 
 function name_change(){
     names = input.value;
@@ -43,11 +43,11 @@ function rounds(){
 
 function evaluate(userChoice){
     if(names==undefined){
-        alert('Please enter your name and submit it');
+        alert('Please enter your name ');
         return; 
     }
     if(!round_number || round_number>50 || round_number<=0){
-        alert('Please enter the number of rounds you would like to play and submit it (The number should be between 1 and 50)');
+        alert('Please enter the number of rounds you would like to play ');
         return;
     }
     
